@@ -40,7 +40,7 @@ public class MainFragment extends Fragment {
 
         imageView = view.findViewById(R.id.fragmentImageView);
         Picasso.get()
-                .load("https://desafiolatam.com/assets/home/logo-academia-bla-790873cdf66b0e681dfbe640ace8a602f5330bec301c409744c358330e823ae3.png")
+                .load("https://blog.desafiolatam.com/wp-content/uploads/2015/03/desafio-latam-logonegro.png")
                 .into(imageView);
     }
 }
