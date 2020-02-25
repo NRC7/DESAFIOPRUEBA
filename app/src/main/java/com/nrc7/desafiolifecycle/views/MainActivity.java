@@ -1,8 +1,10 @@
-package com.nrc7.desafiolifecycle;
+package com.nrc7.desafiolifecycle.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.nrc7.desafiolifecycle.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -12,10 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MainFragment fragment = new MainFragment();
-
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.container, fragment, "fragment")
+                .add(R.id.container, new MainFragment(), "fragment")
                 .commit();
     }
 }

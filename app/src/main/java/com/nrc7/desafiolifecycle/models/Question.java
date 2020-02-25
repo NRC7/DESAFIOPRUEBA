@@ -1,8 +1,8 @@
-package com.nrc7.desafiolifecycle;
+package com.nrc7.desafiolifecycle.models;
 
 import androidx.annotation.NonNull;
 
-public class QuestionResults implements java.io.Serializable {
+public class Question implements java.io.Serializable {
     private static final long serialVersionUID = -2670353060187771354L;
     private String difficulty;
     private String question;

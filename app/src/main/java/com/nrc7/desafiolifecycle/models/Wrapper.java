@@ -1,9 +1,11 @@
-package com.nrc7.desafiolifecycle;
+package com.nrc7.desafiolifecycle.models;
 
-public class Question implements java.io.Serializable {
+import androidx.annotation.NonNull;
+
+public class Wrapper implements java.io.Serializable {
     private static final long serialVersionUID = 3478686235289175586L;
     private int response_code;
-    private QuestionResults[] results;
+    private Question[] results;
 
     public int getResponse_code() {
         return this.response_code;
@@ -13,11 +15,17 @@ public class Question implements java.io.Serializable {
         this.response_code = response_code;
     }
 
-    public QuestionResults[] getResults() {
+    public Question[] getResults() {
         return this.results;
     }
 
-    public void setResults(QuestionResults[] results) {
+    public void setResults(Question[] results) {
         this.results = results;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

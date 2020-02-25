@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
+    tools:context=".views.MainFragment">
 
     <ImageView
         android:id="@+id/fragmentImageView"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_launcher_background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/questionTv"
+        android:layout_marginBottom="32sp"
+        android:src="@drawable/ic_launcher_background" />
 
-</FrameLayout>
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/questionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8sp"
+        android:layout_marginBottom="16sp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="8sp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/questionTv"
+        android:id="@+id/rightAnswerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="8sp"
+        android:text="ANSWER"
+        android:textSize="16sp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rightAnswerTV"
+        android:id="@+id/wrongAnswerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="8sp"
+        android:text="WRONG"
+        android:textSize="16sp" />
+
+</RelativeLayout>
