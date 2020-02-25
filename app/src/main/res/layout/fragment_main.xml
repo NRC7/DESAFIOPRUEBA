@@ -25,7 +25,7 @@
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:padding="8sp"
-        android:textSize="22sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
@@ -39,8 +39,7 @@
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:padding="8sp"
-        android:text="ANSWER"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:textStyle="bold"
@@ -53,7 +52,6 @@
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:padding="8sp"
-        android:text="WRONG"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
 </RelativeLayout>

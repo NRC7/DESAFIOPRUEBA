@@ -7,25 +7,20 @@ public class Wrapper implements java.io.Serializable {
     private int response_code;
     private Question[] results;
 
-    public int getResponse_code() {
-        return this.response_code;
-    }
-
-    public void setResponse_code(int response_code) {
+    public Wrapper(int response_code, Question[] results) {
         this.response_code = response_code;
-    }
-
-    public Question[] getResults() {
-        return this.results;
-    }
-
-    public void setResults(Question[] results) {
         this.results = results;
     }
 
-    @NonNull
-    @Override
-    public String toString() {
-        return super.toString();
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public int getResponse_code() {
+        return response_code;
+    }
+
+    public Question[] getResults() {
+        return results;
     }
 }

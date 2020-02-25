@@ -1,6 +1,5 @@
 package com.nrc7.desafiolifecycle.models;
 
-import androidx.annotation.NonNull;
 
 public class Question implements java.io.Serializable {
     private static final long serialVersionUID = -2670353060187771354L;
@@ -11,57 +10,40 @@ public class Question implements java.io.Serializable {
     private String category;
     private String type;
 
-    public String getDifficulty() {
-        return this.difficulty;
-    }
-
-    public void setDifficulty(String difficulty) {
+    public Question(String difficulty, String question, String correct_answer, String[] incorrect_answers, String category, String type) {
         this.difficulty = difficulty;
-    }
-
-    public String getQuestion() {
-        return this.question;
-    }
-
-    public void setQuestion(String question) {
         this.question = question;
-    }
-
-    public String getCorrect_answer() {
-        return this.correct_answer;
-    }
-
-    public void setCorrect_answer(String correct_answer) {
         this.correct_answer = correct_answer;
-    }
-
-    public String[] getIncorrect_answers() {
-        return this.incorrect_answers;
-    }
-
-    public void setIncorrect_answers(String[] incorrect_answers) {
         this.incorrect_answers = incorrect_answers;
-    }
-
-    public String getCategory() {
-        return this.category;
-    }
-
-    public void setCategory(String category) {
         this.category = category;
-    }
-
-    public String getType() {
-        return this.type;
-    }
-
-    public void setType(String type) {
         this.type = type;
     }
 
-    @NonNull
-    @Override
-    public String toString() {
-        return super.toString();
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
+
+    public String getDifficulty() {
+        return difficulty;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public String getCorrect_answer() {
+        return correct_answer;
+    }
+
+    public String[] getIncorrect_answers() {
+        return incorrect_answers;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getType() {
+        return type;
     }
 }

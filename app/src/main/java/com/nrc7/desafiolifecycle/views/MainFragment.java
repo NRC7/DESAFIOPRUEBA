@@ -27,7 +27,6 @@ public class MainFragment extends Fragment {
     private List<Question> questions = new GetQuestions().getQuestionList();
     private Question question = questions.get(7);
 
-
     public MainFragment() {
     }
 
